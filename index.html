@@ -1,1 +1,17 @@
+<html>
+  <button onclick="randomizeFunction()">Randomize!!</button>
+  
+  <p>Username is:</p>
+  <p id="randomWord"></p>
+</html>
 
+<script>
+const myList = ["Bookie Doom", "Bookie Bomb", "Bookie Boom", "GEORGE FLOYD", "9/11", "Manix", "reedrichards", "skibidi", "ctrl+shft+q+q"];
+
+randomizeFunction()
+
+function randomizeFunction() {
+    document.getElementById("randomWord").innerHTML = myList[Math.floor(Math.random() * myList.length)]
+}
+</script>
+,
